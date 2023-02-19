@@ -6,7 +6,7 @@ const Costs = (props) => {
 
   return (
     <Card className="costs">
-      {costs.map((cost) => {
+      {/* {costs.map((cost) => {
         return (
           <CostItem
             date={cost.date}
@@ -14,8 +14,8 @@ const Costs = (props) => {
             amount={cost.amount}
           />
         );
-      })}
-      {/* <CostItem
+      })} */}
+      <CostItem
         date={costs[0].date}
         description={costs[0].description}
         amount={costs[0].amount}
@@ -29,7 +29,7 @@ const Costs = (props) => {
         date={costs[2].date}
         description={costs[2].description}
         amount={costs[2].amount}
-      /> */}
+      />
     </Card>
   );
 };
