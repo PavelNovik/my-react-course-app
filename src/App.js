@@ -1,4 +1,6 @@
-import Costs from './components/Costs';
+// import React from 'react';
+import Costs from './components/Costs/Costs';
+// import Costs from './components/Costs';
 
 function App() {
   const costs = [
@@ -33,6 +35,15 @@ function App() {
       amount: 10,
     },
   ];
+
+  // Alternative Code
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h1', {}, "Let's start to learn REACT"),
+  //   React.createElement('h3', {}, 'Hello world'),
+  //   React.createElement(Costs, { costs: costs })
+  // );
 
   return (
     <div>
