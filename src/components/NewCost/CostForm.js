@@ -44,7 +44,7 @@ const CostForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const costData = {
-      name: inputName,
+      description: inputName,
       amount: inputAmount,
       date: new Date(inputDate),
     };
@@ -84,6 +84,9 @@ const CostForm = (props) => {
         </div>
         <div className="new-cost__actions">
           <button type="submit">Add Cost</button>
+          <button type="button" onClick={props.onCancel}>
+            Cancel
+          </button>
         </div>
       </div>
     </form>
